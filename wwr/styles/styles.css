@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #0077B6;
+    --secondary-color: #90E0EF;
+    --accent1-color: #FFB703;
+    --accent2-color: #FB8500;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+/* Header - Use Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    gap: 20px; /* Adds spacing between nav items */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: #ffffff; /* Ensures good contrast with a dark background */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #005F8C; /* Adds a hover effect */
+    color: #FFB703; /* Ensures contrast on hover */
+}
+/* Navigation - Use Flex */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Footer - Align Social Icons */
+footer .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Fix Color Contrast */
+body {
+    color: #333;
+    /* Ensure readable text color */
+    background-color: #f5f5f5;
+    /* Light background */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    color: var(--text-color);
+}
+
+.hero article img {
+    float: right;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#adventures {
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.adventures-gallery {
+    display: flex;
+    justify-content: flex-start;
+    /* Aligns images to the left */
+    gap: 15px;
+    flex-wrap: nowrap;
+    /* Keep images in one horizontal row */
+    overflow-x: auto;
+    /* Adds horizontal scrolling if needed */
+    padding-bottom: 10px;
+}
+
+.adventures-gallery figure {
+    margin: 0;
+    text-align: center;
+    flex: 0 0 auto;
+    /* Prevent figures from stretching */
+}
+
+.adventures-gallery img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+section img {
+    width: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid var(--accent1-color);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    gap: 10px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid var(--accent1-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}

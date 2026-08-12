@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Updated meta description and keywords for Contact Us page -->
+  <meta name="description"
+    content="Contact Whitewater Rafting Co. for adventure inquiries, reservations, or suggestions. Reach out to us by phone, email, or visit our office.">
+  <meta name="keywords" content="Whitewater Rafting, Contact Us, Adventure, Rafting, Outdoor Activities">
+  <meta name="author" content="Kenneth Maberi">
+  <meta name="robots" content="index, follow">
+  <title>Contact Us - Whitewater Rafting Co.</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <img src="images/logo.jpg" alt="Whitewater Rafting Logo">
+    <h1>Whitewater Rafting Co.</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Company Information Section -->
+    <section id="company-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 River Road, Adventure City, USA</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> info@whitewaterrraftingco.com</p>
+      <h3>Our Location</h3>
+      <!-- Embedded Google Map without inline CSS for border -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1502560964393!2d-122.42117238468109!3d37.77492977975939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085815e57bb0ebf%3A0x6a62b6e2e9a0f8b2!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1616666666666"
+        width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Employee Profiles Section -->
+    <section id="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="profiles">
+        <figure>
+          <img src="images/employee1.jpg" alt="John Doe, Lead Guide">
+          <figcaption>John Doe – Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Jane Smith, Safety Manager">
+          <figcaption>Jane Smith – Safety Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Mike Brown, Adventure Coordinator">
+          <figcaption>Mike Brown – Adventure Coordinator</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="process_form.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Purpose of Your Message:</legend>
+          <label>
+            <input type="radio" name="purpose" value="general" required>
+            General Inquiry
+          </label>
+          <label>
+            <input type="radio" name="purpose" value="reservation">
+            Reservation Question
+          </label>
+          <label>
+            <input type="radio" name="purpose" value="suggestion">
+            Website Suggestion
+          </label>
+        </fieldset>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Your Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Whitewater Rafting Co. | Designed by Ronald Odongkara</p>
+      <nav class="sociallinks">
+        <ul>
+          <li><a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="images/instagram-icon.jpeg" alt="Instagram"></a></li>
+        </ul>
+      </nav>
+      <!-- Wireframe Link -->
+      <p><a href="https://app.moqups.com/l8XodFEIWwliZtaFkqlSGLhdMnUgUyrs/view/page/ad64222d5?ui=0&fit_width=1"
+          target="_blank">View Contact Page Wireframe</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
