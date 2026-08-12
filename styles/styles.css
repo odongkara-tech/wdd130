@@ -17,6 +17,11 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+nav {
+    background-color: #003d82;
+    padding: 0.75rem 0;
+}
+
 header nav {
     display: flex;
     justify-content: center;
@@ -25,11 +30,15 @@ header nav {
     margin: 0 auto;
 }
 
-header nav a {
-    text-decoration: none;
+nav a {
     color: #ffffff;
-    font-weight: bold;
     padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -62,6 +71,8 @@ main img {
     display: block;
     margin: 1rem auto;
     border-radius: 10px;
+    border: 3px solid #003d82;
+    padding: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -69,6 +80,7 @@ main p {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    padding: 0;
 }
 
 aside {
